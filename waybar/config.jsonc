@@ -25,7 +25,7 @@
         // "battery",
         "clock",
         "custom/sep",
-        "tray"
+        "custom/power"
     ],
     // Modules configuration
     "hyprland/window": {
@@ -204,8 +204,8 @@
 		"menu": "on-click",
 		"menu-file": "/usr/share/waybar/custom_modules/power_menu.xml", // Menu file in resources folder
 		"menu-actions": {
-			"shutdown": "shutdown",
-			"reboot": "reboot",
+			"shutdown": "systemctl poweroff",
+			"reboot": "systemctl reboot",
 			"suspend": "systemctl suspend",
 			"hibernate": "systemctl hibernate"
 		}
